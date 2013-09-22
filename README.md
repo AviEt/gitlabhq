@@ -4,7 +4,7 @@
 
 ![animated-screenshots](https://gist.github.com/fnkr/2f9badd56bfe0ed04ee7/raw/4f48806fbae97f556c2f78d8c2d299c04500cb0d/compiled.gif)
 
-### GitLab allows you to...
+### GitLab allows you to
  * keep your code secure on your own server
  * manage repositories, users and access permissions
  * communicate through issues, line-comments and wiki pages
