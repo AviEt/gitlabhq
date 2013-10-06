@@ -8,6 +8,10 @@ Feature: Project Wiki
     Given I create the Wiki Home page
     Then I should see the newly created wiki page
 
+  Scenario: Add new page with space
+    Given I create the Wiki Home page with link to a page with spaces
+    Then I should see the newly created wiki page with spaces
+
   Scenario: Pressing Cancel while editing a brand new Wiki
     Given I click on the Cancel button
     Then I should be redirected back to the Edit Home Wiki page

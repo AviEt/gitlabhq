@@ -20,12 +20,24 @@ class ProjectWiki < Spinach::FeatureSteps
     click_on "Create page"
   end
 
+  Given 'I create the Wiki Home page with link to a page with spaces' do
+    fill_in "Content", with: '[link page with spaces](page%20with%20spaces)'
+    click_on "Create page"
+  end
+
   Then 'I should see the newly created wiki page' do
     page.should have_content "Home"
     page.should have_content "link test"
 
     click_link "link test"
     page.should have_content "Editing page"
+  end
+
+  Then 'I should see the newly created wiki page with spaces' do
+    page.should have_content "Home"
+    page.should have_content "link page with spaces"
+
+    click_link "link page with spaces"
   end
 
   Given 'I have an existing Wiki page' do
